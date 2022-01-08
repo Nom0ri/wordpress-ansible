@@ -1,9 +1,9 @@
 # Wordpress Ansible Automation
 ## Instalacja
-1. Utworzenie maszyny wirtualnej z wykorzystanie AWS
+1. Utworzenie maszyny wirtualnej z wykorzystaniem AWS
 2. Połączenie z sokrates.edu.jkan.pl
 3. Utworzenie `hosts.ini` deklarującego IP utworzonej maszyny wirtualnej
-4. Utworzenie folderu ``Files`` zawierającego pliki konfiguracyjne: `blog-vhost.conf`, `lb.conf`, `Mariadb.repo`, `wp-config.php`
+4. Utworzenie folderu ``files`` zawierającego pliki konfiguracyjne: `blog-vhost.conf`, `lb.conf`, `Mariadb.repo`, `wp-config.php`
 5. Utworzenie pliku `setup_wordpress.yaml`
 
 ## Zawartość pliku setup_wordpress.yaml
@@ -19,7 +19,7 @@
 ## Rezultat
 Komenda wywołania instalacji:
 ```
-ansible-playbook setup.yml -i hosts.ini
+ansible-playbook setup_wordpress.yaml -i hosts.ini
 ```
 Wynik:
 ![](Result.png)
